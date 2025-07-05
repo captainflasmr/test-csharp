@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "--configuration",
+                "Debug"
+            ],
+            "group": "build",
+            "problemMatcher": "$msCompile",
+            "detail": "Build the project using dotnet build."
+        },
+        {
+            "label": "run",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "run"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": "$msCompile",
+            "detail": "Run the project using dotnet run."
+        },
+        {
+            "label": "clean",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "clean"
+            ],
+            "group": "build",
+            "problemMatcher": "$msCompile",
+            "detail": "Clean the project using dotnet clean."
+        }
+    ]
+}
